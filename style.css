@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: calc(100% - 200px);
+    padding: 0;
+}
+
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 4;
+    transition: all 0.3s ease;
+}
+
+.navbar{
+    padding: 18px 0;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-item{
+    margin-right: 50px;
+}
+
+.nav-item a{
+    color: black;
+    font-weight: 500;
+}
+
+.btn{
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.login-btn{
+    margin-right: 30px;
+    padding: 10px 25px;
+    border-color: #20B15A;
+    color: black;
+}
+
+.login-btn:hover{
+    background-color: #20B15A;
+}
+
+.btn-primary{
+    padding: 10px 20px;
+    background-color: #20B15A;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #1b914a;
+}
+
+.header-colored{
+    background-color: white;
+    box-shadow: rgb(229 232 235) 0px 1px 0px 0px;
+}
+
+.header-transparent{
+    background-color: transparent;
+}
+
+
+.hero-section{
+    width: 100%;
+    height: 124vh;
+    background-color: #D7F5DC;
+}
+
+.hero{
+    height: 124vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__content{
+    display: flex;
+    align-items: center;
+    margin-top: 110px;
+    position: relative;
+}
+
+.hero__content-caption h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    margin-bottom: 10px;
+}
+
+.hero__content-caption p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 37px;
+}
+
+.btn-lg{
+    padding: 20px 30px;
+}
+
+.hero__content img{
+    width: 664px;
+    height: 548px;
+}
+
+.hero__partners{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 45px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color:#F8FFF9;
+}
+
+.whatwedo-section{
+    padding: 67px 0 48px;
+}
+
+.section-header{
+    width: 44%;
+}
+
+.heading-sm{
+    font-weight: 500;
+    font-size: 20px;
+    color: #20B15A;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.heading-lg{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.whatwedo .section-header{
+    margin-bottom: 32px;
+}
+
+.whatwedo__list{
+    display: flex;
+}
+
+.whatwedo__list-card{
+    padding: 50px 30px 60px 30px;
+}
+
+.whatwedo__list-card:not(:last-child){
+    margin-right: 40px;
+}
+
+.whatwedo__list-card span{
+    display: inline-block;
+    margin-bottom: 15px;
+    background-color: #D7F5DC;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.heading-md{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+
+.whatwedo__list-card p{
+    font-size: 18px;
+    line-height: 24.6px;
+    margin-bottom: 43px;
+}
+
+.whatwedo__list-card a{
+    padding: 15px 20px;
+    font-size: 18px;
+    color: black;
+}
+
+.whatwedo__list-card a i{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+
+.achievements-section{
+    background-color: #FAFFFB;
+    padding: 80px 0;
+}
+
+.achievements{
+    max-width: calc(100% - 340px);
+    margin: 0 auto;
+    display: flex;
+}
+
+.achievements__item{
+    width: 25%;
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.achievements__item:not(:last-child){
+    border-right: 1px solid rgba(196, 196, 196, 0.5);
+}
+
+.achievements__item img{
+    margin-bottom: 10px;
+}
+
+.achievements__item p{
+    font-weight: 500;
+}
+
+.achievements__item span{
+    font-weight: 800;
+    font-size: 40px;
+    color: #20B15A;
+}
+
+
+.portfolio-section{
+    padding: 78px 0 90px;
+}
+
+.portfolio .section-header{
+    margin-bottom: 73px;
+}
+
+.portfolio__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio__column-item{
+    width: 550px;
+}
+
+.portfolio__column-item:first-child{
+    margin-bottom: 80px;
+}
+
+.portfolio__column-item img{
+    width: 100%;
+    margin-bottom: 42px;
+}
+
+.portfolio__column-item p{
+    font-size: 15px;
+    line-height: 21px;
+}
+
+
+.subscribe-section{
+    padding: 90px 0 145px;
+}
+
+.subscribe{
+    max-width: 596px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subscribe .heading-sm{
+    margin-bottom: 22px;
+}
+
+.subscribe .heading-lg{
+    width: 85%;
+    margin: 0 auto 5px;
+    text-transform: capitalize;
+}
+
+.subscribe p{
+    color: #8B8B8B;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.subscribe form{
+    position: relative;
+}
+
+.subscribe input{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 14px;
+    outline: none;
+    padding: 20px 16px;
+}
+
+.subscribe input::placeholder{
+    color: #8B8B8B;
+}
+
+.btn-secondary{
+    font-weight: 500;
+    padding: 14px 24px;
+    border-radius: 14px;
+    border: none;
+    background-color: #F55F1D;
+    color: white;
+    line-height: 24px;
+}
+
+.btn-secondary:hover{
+    background-color: #ee4d07;
+}
+
+.subscribe-btn{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer{
+    padding: 76px 0 29px;
+    background-color: #00CA72;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.footer-logo{
+    font-weight: 700;
+    font-size: 39px;
+    margin-bottom: 19px;
+    color: black;
+}
+
+.footer-text{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+.footer__content-desc p{
+    width: 328px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.social-links a{
+    color: white;
+    padding: 11px 17px;
+    border-radius: 50%;
+    background-color: #20B15A;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.footer__content h4{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer__content-links h4{
+    margin-bottom: 16px;
+}
+
+.footer__content-links ul{
+    padding-left: 0;
+}
+
+.footer__content-links li:not(:last-child){
+    margin-bottom: 25px;
+}
+
+.footer__content-links li a{
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+}
+
+.footer__content-address h4{
+    margin-bottom: 26px;
+}
