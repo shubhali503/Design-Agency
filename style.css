@@ -417,9 +417,12 @@ ul{
         max-width: calc(100% - 120px);
     }
 
+    .hero-section, .hero{
+        height: 100vh;
+    }
+
     .hero__content{
         align-items: flex-start;
-        margin-top: 92px;
     }
 
     .hero__content-caption h1{
@@ -443,7 +446,7 @@ ul{
 
     .hero__partners{
         padding: 40px 0;
-        top: 103%;
+        top: 70%;
     }
 
     .section-header{
@@ -471,6 +474,10 @@ ul{
         padding: 0;
     }
 
+    .achievements-section{
+        padding: 60px 0;
+    }
+
     .achievements{
         max-width: calc(100% - 120px);
     }
@@ -479,9 +486,17 @@ ul{
         font-size: 30px;
     }
 
+    .portfolio-section{
+        padding: 60px 0;
+    }
+
     .portfolio__wrapper{
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .subscribe-section{
+        padding: 60px 0 90px;
     }
 
     .footer__content{
@@ -494,6 +509,11 @@ ul{
         max-width: calc(100% - 80px);
     }
 
+    .hero__content-caption h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
     .hero__content img{
         display: none;
     }
@@ -502,9 +522,9 @@ ul{
         flex-wrap: wrap;
     }
 
-    .hero__partners{
-        top: 90%;
-    }
+    /* .hero__partners{
+        top: 80%;
+    } */
 
     .achievements__item{
         width: 100%;
@@ -516,5 +536,9 @@ ul{
 
     .portfolio__column-item{
         width: 290px;
+    }
+
+    .social-links{
+        margin-bottom: 26px;
     }
 }
